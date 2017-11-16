@@ -1,6 +1,7 @@
 # CURSO de API em NODE com TYPESCRIPT - EXPRESS - POSTGRESQL - SEQUELIZE
 
-## ESte repositório substitui o antigo https://github.com/ricardoub/exemplos-raphaellima-ts-api.git
+## Este repositório substitui o antigo https://github.com/ricardoub/exemplos-raphaellima-ts-api.git
+## Para acesso ao repositório do curso acesse: https://github.com/raphaellima8/typescript-course
 
 ## Passo a passo da execução do curso
 ### Criação do projeto

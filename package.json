@@ -1,0 +1,26 @@
+{
+  "name": "ts-api",
+  "version": "1.0.0",
+  "description": "API Desenvolvida Utilizando TS, NODE, ES6, Postgres e Sequelize",
+  "main": "server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "API",
+    "TypeScript",
+    "NODE",
+    "ES6",
+    "curso"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardoub/cursos-raphal-lima-ts-api.git"
+  },
+  "author": "Ricardo Ulrich Bomfim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ricardoub/cursos-raphal-lima-ts-api/issues"
+  },
+  "homepage": "https://github.com/ricardoub/cursos-raphal-lima-ts-api#readme"
+}
