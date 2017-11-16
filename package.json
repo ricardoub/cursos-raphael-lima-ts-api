@@ -22,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/ricardoub/cursos-raphal-lima-ts-api/issues"
   },
-  "homepage": "https://github.com/ricardoub/cursos-raphal-lima-ts-api#readme"
+  "homepage": "https://github.com/ricardoub/cursos-raphal-lima-ts-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "http": "0.0.0",
+    "morgan": "^1.9.0",
+    "pg": "^7.4.0"
+  }
 }
