@@ -13,4 +13,5 @@ npm init
 ### Instalação das dependencias utilizadas no projeto
 ```
 npm i body-parser express http morgan pg -S
+npm i ts-node -D
 ```
