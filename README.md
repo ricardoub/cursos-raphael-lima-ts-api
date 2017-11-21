@@ -16,4 +16,5 @@ npm i body-parser express http morgan pg -S
 npm i ts-node -D
 npm i @types/express @types/body-parser @types/morgan -D
 npm i sequelize sequelize-cli -S
+npm i sequelize @types/sequelize -D
 ```
