@@ -15,7 +15,7 @@ Clonamos um repositório recem criado e vazio, desta maneira já adiciona o remo
 
 ```
 git clone https://github.com/ricardoub/cursos-raphael-lima-ts-api.git ts-api && cd ts-api
-npm init
+npm install
 ```
 
 ### Instalação das dependencias utilizadas no projeto
