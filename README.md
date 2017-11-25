@@ -3,17 +3,19 @@
 ## Este repositório substitui o antigo https://github.com/ricardoub/exemplos-raphaellima-ts-api.git
 ## Para acesso ao repositório do curso acesse: https://github.com/raphaellima8/typescript-course
 
+## Instalação do typescript
+```
+sudo npm -g i typescript
+```
+
 ## Passo a passo da execução do curso
+
 ### Criação do projeto
 Clonamos um repositório recem criado e vazio, desta maneira já adiciona o remote e iniciamos o projeto Node.
+
 ```
 git clone https://github.com/ricardoub/cursos-raphael-lima-ts-api.git ts-api && cd ts-api
 npm init
-```
-
-### Instalação do typescript
-```
-sudo npm -g i typescript
 ```
 
 ### Instalação das dependencias utilizadas no projeto
