@@ -41,6 +41,7 @@
     "@types/morgan": "^1.7.33",
     "@types/sequelize": "^4.0.76",
     "sequelize": "^4.13.5",
-    "ts-node": "^3.3.0"
+    "ts-node": "^3.3.0",
+    "typescript": "^2.6.1"
   }
 }
