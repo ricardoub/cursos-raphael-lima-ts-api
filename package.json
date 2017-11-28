@@ -4,9 +4,9 @@
   "description": "API Desenvolvida Utilizando TS, NODE, ES6, Postgres e Sequelize",
   "main": "server/server.ts",
   "scripts": {
-    "start": "./node_modules/.bin/ts-node ./server/server.ts",
-    "builded": "node ./build/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=development ./node_modules/.bin/ts-node ./server/server.ts",
+    "builded": "NODE_ENV=development node ./build/server.js",
+    "test": "NODE_ENV=test echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "API",
@@ -17,14 +17,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ricardoub/cursos-raphal-lima-ts-api.git"
+    "url": "git+https://github.com/ricardoub/cursos-raphael-lima-ts-api.git"
   },
   "author": "Ricardo Ulrich Bomfim",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ricardoub/cursos-raphal-lima-ts-api/issues"
+    "url": "https://github.com/ricardoub/cursos-raphael-lima-ts-api/issues"
   },
-  "homepage": "https://github.com/ricardoub/cursos-raphal-lima-ts-api#readme",
+  "homepage": "https://github.com/ricardoub/cursos-raphael-lima-ts-api#readme",
   "dependencies": {
     "bluebird": "^3.5.1",
     "body-parser": "^1.18.2",
