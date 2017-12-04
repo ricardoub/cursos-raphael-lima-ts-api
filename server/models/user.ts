@@ -14,7 +14,7 @@ export default function(sequelize, DataTypes) {
       }
     },
     email: {
-      type: DataTypes.string,
+      type: DataTypes.STRING,
       allowNull: false,
       validate: {
         notEmpty: true
@@ -30,5 +30,5 @@ export default function(sequelize, DataTypes) {
   });
 
   return User;
-  
+
 }

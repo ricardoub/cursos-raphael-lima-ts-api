@@ -15,7 +15,7 @@ function default_1(sequelize, DataTypes) {
             }
         },
         email: {
-            type: DataTypes.string,
+            type: DataTypes.STRING,
             allowNull: false,
             validate: {
                 notEmpty: true
