@@ -18,6 +18,11 @@ var UserController = (function () {
             message: 'OK'
         });
     };
+    UserController.prototype.updateUser = function (req, res) {
+        res.status(200).json({
+            message: 'OK'
+        });
+    };
     UserController.prototype.deleteUser = function (req, res) {
         res.status(200).json({
             message: 'OK'

@@ -22,6 +22,12 @@ class UserController {
     })
   }
 
+  updateUser(req: Request, res: Response){
+    res.status(200).json({
+      message: 'OK'
+    })
+  }
+
   deleteUser(req: Request, res: Response){
     res.status(200).json({
       message: 'OK'
