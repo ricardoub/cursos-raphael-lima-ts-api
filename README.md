@@ -21,12 +21,13 @@ npm install
 
 ### Instalação das dependencias utilizadas no projeto, na ordem de execução do curso.
 ```
-npm i typescript -D
-npm i body-parser express http morgan pg -S
-npm i ts-node -D
-npm i @types/express @types/body-parser @types/morgan -D
-npm i sequelize sequelize-cli -S
-npm i sequelize @types/sequelize -D
-npm i mocha chai supertest testdouble -D
-npm i @types/mocha @types/chai @types/supertest -D
+npm i -D typescript -D
+npm i -S body-parser express http morgan pg
+npm i -D ts-node
+npm i -D @types/express @types/body-parser @types/morgan
+sudo npm i -g sequelize sequelize-cli
+npm i -S sequelize sequelize-cli
+npm i -D sequelize @types/sequelize
+npm i -D mocha chai supertest testdouble
+npm i  -D@types/mocha @types/chai @types/supertest
 ```
