@@ -2,13 +2,38 @@ import { app, request, expect } from './config/helpers';
 
 describe('Testes de Integração', () => {
 
+  describe('GET /', () => {
+    it('Deve retornar a mensagem Hello, world!', done => {
+      request(app)
+        .get('/')
+        .end((error, res) => {
+          expect(res.status).to.equal(200);
+          expect(res.text).to.be.eql('Hello, world!');
+          done(error);
+        });
+    })
+  });
+
+  describe('GET /ola/:nome', () => {
+    it('Deve retornar a mensagem Hello, Typescript Course', done => {
+      const nome = 'TypeScript Course';
+      request(app)
+      .get(`/ola/${nome}`)
+      .end((error, res) => {
+        expect(res.status).to.equal(200);
+        expect(res.text).to.be.eql(`Hello, ${nome}`);
+        done(error);
+      });
+    })
+  });
+
   describe('GET /api/users/all', () => {
     it('Deve retornar um JSON com todos os usuários', done => {
       request(app)
         .get('/api/users/all')
         .end((error,res) => {
           expect(res.status).to.equal(200);
-        })
+        });
     });
   });
 
