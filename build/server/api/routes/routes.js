@@ -5,8 +5,15 @@ var Routes = (function () {
         this.getRoutes(app);
     }
     Routes.prototype.getRoutes = function (app) {
-        app.route('/').get(function (req, res) { return res.send('Hello, world!'); });
-        app.route('/ola/:nome').get(function (req, res) { return res.send("Hello, " + req.params.nome); });
+        /*
+        app.route('/').get((req: Request, res: Response) => res.send('Hello, world!'));
+        app.route('/ola/:nome').get((req: Request, res: Response) => res.send(`Hello, ${req.params.nome}`));
+        */
+        app.route('/api/users/all').get(this.router.index);
+        app.route('/api/users/create').post(this.router.cretae);
+        app.route('/api/users/:id').get(this.router.findOne);
+        app.route('/api/users/:id/update').put(this.router.update);
+        app.route('/api/users/:id/destroy').delete(this.router.destroy);
     };
     return Routes;
 }());
