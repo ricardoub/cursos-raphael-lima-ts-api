@@ -29,5 +29,6 @@ sudo npm i -g sequelize sequelize-cli
 npm i -S sequelize sequelize-cli
 npm i -D sequelize @types/sequelize
 npm i -D mocha chai supertest testdouble
-npm i  -D@types/mocha @types/chai @types/supertest
+npm i -D @types/mocha @types/chai @types/supertest
+npm i -S http-status
 ```
