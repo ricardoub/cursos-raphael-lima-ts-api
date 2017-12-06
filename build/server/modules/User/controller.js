@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var HTTPStatus = require("http-status");
-var UserController = /** @class */ (function () {
+var UserController = (function () {
     function UserController() {
     }
     UserController.prototype.getAll = function (req, res) {

@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var routes_1 = require("../../modules/User/routes");
-var Routes = /** @class */ (function () {
+var Routes = (function () {
     function Routes(app) {
         this.router = new routes_1.default();
         this.getRoutes(app);
