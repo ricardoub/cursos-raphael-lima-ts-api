@@ -47,9 +47,14 @@ describe('Testes de Integração', function () {
     describe('GET /api/users/:id', function () {
         it('Deve retornar um JSON apenas um usuário', function (done) {
             helpers_1.request(helpers_1.app)
-                .get("/api/users/" + 1)
+                .get("/api/users/" + userDefault.id)
                 .end(function (error, res) {
                 helpers_1.expect(res.status).to.equal(HTTPStatus.OK);
+                helpers_1.expect(res.body.payload.id).to.equal(userDefault.id);
+                helpers_1.expect(res.body.payload).to.have.all.keys([
+                    'id', 'name', 'email', 'password'
+                ]);
+                id = res.body.payload.id;
                 done(error);
             });
         });
@@ -74,16 +79,21 @@ describe('Testes de Integração', function () {
             });
         });
     });
-    describe('put /api/users/:id/update', function () {
+    describe('PUT /api/users/:id/update', function () {
         it('Deve atualizar um usuário', function (done) {
             var user = {
-                nome: 'TesteUpdate'
+                id: 2,
+                name: 'TesteUpdate',
+                email: 'update@email.com'
             };
             helpers_1.request(helpers_1.app)
-                .put("/api/users/" + 1 + "/update")
+                .put("/api/users/" + userTest.id + "/update")
                 .send(user)
                 .end(function (error, res) {
                 helpers_1.expect(res.status).to.equal(HTTPStatus.OK);
+                helpers_1.expect(res.body.payload.id).to.eql(user.id);
+                helpers_1.expect(res.body.payload.name).to.eql(user.name);
+                helpers_1.expect(res.body.payload.email).to.eql(user.email);
                 done(error);
             });
         });
@@ -94,6 +104,7 @@ describe('Testes de Integração', function () {
                 .delete("/api/users/" + 1 + "/destroy")
                 .end(function (error, res) {
                 helpers_1.expect(res.status).to.equal(HTTPStatus.OK);
+                helpers_1.expect(res.body.payload).to.eql(1);
                 done(error);
             });
         });
