@@ -31,4 +31,5 @@ npm i -D sequelize @types/sequelize
 npm i -D mocha chai supertest testdouble
 npm i -D @types/mocha @types/chai @types/supertest
 npm i -S http-status
+npm i -S bluebird
 ```
