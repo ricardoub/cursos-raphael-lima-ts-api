@@ -10,10 +10,22 @@ class User implements IUser {
 
   constructor(){}
 
-  create(user: any){}
-  getAll(): Bluebird<IUser[]>{}
+  create(user: any){
+    return model.User.create(user);
+  }
+
+  getAll(): Bluebird<IUser[]>{
+    return model.User.findAll({
+      order: ['name']
+    })
+    .then(createUsers);
+  }
+
   getById(id: number): Bluebird<IUserDetail[]>{}
+
   getByEmail(email: string): Bluebird<IUserDetail[]>{}
+
   update(id: number, user: any){}
+
   delete(id: number){}
 }
