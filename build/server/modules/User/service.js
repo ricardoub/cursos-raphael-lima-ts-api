@@ -20,7 +20,12 @@ var User = (function () {
         })
             .then(interface_1.createUserById);
     };
-    User.prototype.getByEmail = function (email) { };
+    User.prototype.getByEmail = function (email) {
+        return model.User.findOne({
+            where: { email: email }
+        })
+            .then(interface_1.createUserByEmail);
+    };
     User.prototype.update = function (id, user) { };
     User.prototype.delete = function (id) { };
     return User;
