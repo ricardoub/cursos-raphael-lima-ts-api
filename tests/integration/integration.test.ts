@@ -64,13 +64,19 @@ describe('Testes de Integração', () => {
   describe('POST /api/users/create', () => {
     it('Deve criar um novo usuário', done => {
       const user = {
-        nome: 'Teste'
+        id: 2,
+        name: 'Usuario Teste',
+        email: 'usuario@email.com',
+        password: 'novouser'
       }
       request(app)
         .post('/api/users/create')
         .send(user)
         .end((error,res) => {
           expect(res.status).to.equal(HTTPStatus.OK);
+          expect(res.body.payload.id).to.eql(user.id);
+          expect(res.body.payload.name).to.eql(user.name);
+          expect(res.body.payload.email).to.eql(user.email);
           done(error);
         })
     });

@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var controller_1 = require("./controller");
 var UserCtrl;
-var UserRoutes = (function () {
+var UserRoutes = /** @class */ (function () {
     function UserRoutes() {
         UserCtrl = new controller_1.default();
     }
