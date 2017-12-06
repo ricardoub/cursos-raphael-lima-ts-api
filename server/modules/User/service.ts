@@ -21,7 +21,12 @@ class User implements IUser {
     .then(createUsers);
   }
 
-  getById(id: number): Bluebird<IUserDetail[]>{}
+  getById(id: number): Bluebird<IUserDetail[]>{
+    return model.User.findOne({
+      where: {id}
+    })
+    .then(createUserById);
+  }
 
   getByEmail(email: string): Bluebird<IUserDetail[]>{}
 
