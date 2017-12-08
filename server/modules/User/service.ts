@@ -35,7 +35,12 @@ class User implements IUser {
     .then(createUserByEmail);
   }
 
-  update(id: number, user: any){}
+  update(id: number, user: any){
+    return model.User.update(user, {
+      where: {id},
+      fields: ['name','email','password']
+    })
+  }
 
   delete(id: number){}
 }

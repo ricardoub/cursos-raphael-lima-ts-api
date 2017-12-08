@@ -26,7 +26,12 @@ var User = (function () {
         })
             .then(interface_1.createUserByEmail);
     };
-    User.prototype.update = function (id, user) { };
+    User.prototype.update = function (id, user) {
+        return model.User.update(user, {
+            where: { id: id },
+            fields: ['name', 'email', 'password']
+        });
+    };
     User.prototype.delete = function (id) { };
     return User;
 }());
