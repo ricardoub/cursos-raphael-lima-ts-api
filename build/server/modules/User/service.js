@@ -32,6 +32,11 @@ var User = (function () {
             fields: ['name', 'email', 'password']
         });
     };
-    User.prototype.delete = function (id) { };
+    User.prototype.delete = function (id) {
+        return model.User.destroy({
+            where: { id: id }
+        });
+    };
     return User;
 }());
+exports.default = User;
